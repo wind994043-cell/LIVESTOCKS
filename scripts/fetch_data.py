@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """하루 한 번 실행되어 축산 데이터를 모아 data/data.json 으로 저장합니다.
 표준 라이브러리만 사용합니다. 한 출처가 실패해도 이전 데이터는 그대로 유지됩니다."""
-import json, os, re, urllib.parse, urllib.request
+import json, os, re, time, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 import xml.etree.ElementTree as ET
@@ -12,9 +12,25 @@ UA = {"User-Agent": "Mozilla/5.0 (livestock-dashboard)"}
 DISEASES = ["구제역", "아프리카돼지열병", "고병원성 조류인플루엔자", "럼피스킨"]
 
 
-def get(url, timeout=30):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
-        return r.read().decode("utf-8", "replace")
+def get(url, timeout=30, tries=3):
+    """요청 한도(429) 등 일시적 오류는 잠시 쉬었다가 다시 시도합니다."""
+    for n in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
+                return r.read().decode("utf-8", "replace")
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 503) and n < tries - 1:
+                time.sleep(10 * (n + 1))
+                continue
+            raise
+
+
+def clean_msg(msg):
+    """오류 메시지에 섞인 주소·인증키는 가려서 공개 화면에 노출되지 않게 합니다."""
+    msg = re.sub(r"https?://\S+", "[주소 생략]", msg)
+    msg = re.sub(r"/openapi/\S+", "[주소 생략]", msg)
+    msg = re.sub(r"(?i)apikey=[^&\s]*", "apiKey=***", msg)
+    return msg[:160]
 
 
 def google_news(query, days, limit):
@@ -22,6 +38,7 @@ def google_news(query, days, limit):
     url = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
         {"q": q, "hl": "ko", "gl": "KR", "ceid": "KR:ko"})
     items = []
+    time.sleep(2)  # 구글 뉴스 요청 한도 방지
     for it in ET.fromstring(get(url)).iter("item"):
         title = (it.findtext("title") or "").strip()
         src = (it.findtext("source") or "").strip()
@@ -98,8 +115,8 @@ def fetch_prices(key, uid):
     raise RuntimeError("KAMIS 응답에 가격 데이터가 없습니다 (인증키/ID 확인)")
 
 
-def fetch_stats(url):
-    """KOSIS 통계표 API 주소(JSON)를 받아 시계열별 최근 6개 값으로 정리합니다."""
+def fetch_stats_one(url):
+    """KOSIS 통계표 API 주소(JSON) 하나를 받아 시계열별 최근 6개 값으로 정리합니다."""
     data = json.loads(get(url))
     if isinstance(data, dict):
         raise RuntimeError(data.get("errMsg") or "KOSIS 오류")
@@ -115,6 +132,16 @@ def fetch_stats(url):
     for s in list(series.values())[:10]:
         s["points"] = sorted(s["points"], key=lambda p: p["period"])[-6:]
         out.append(s)
+    return out
+
+
+def fetch_stats(urls):
+    """KOSIS_URL에 주소가 여러 개(줄바꿈/공백으로 구분) 들어 있어도 모두 읽어 합칩니다."""
+    out = []
+    for u in urls.split():
+        out += fetch_stats_one(u)
+    if not out:
+        raise RuntimeError("KOSIS 주소에서 읽은 데이터가 없습니다")
     return out
 
 
@@ -136,7 +163,7 @@ def main():
             data[name] = fn()
             status[name] = {"state": "ok"}
         except Exception as e:  # 실패해도 이전 값 유지
-            status[name] = {"state": "error", "msg": f"{type(e).__name__}: {e}"[:200]}
+            status[name] = {"state": "error", "msg": clean_msg(f"{type(e).__name__}: {e}")}
 
     kk, ki, ku = os.getenv("KAMIS_KEY"), os.getenv("KAMIS_ID"), os.getenv("KOSIS_URL")
     run("news", fetch_news)
