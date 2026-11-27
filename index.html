@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>축산 현황판</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5F4; --surface:#FFFFFF; --ink:#18262B; --muted:#5E6E72; --line:#D9E1E0;
+  --accent:#1F6A5A; --up:#C23B2E; --down:#2A62B8; --warn:#B3392F; --warn-bg:#FBECE9;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#10191B; --surface:#172326; --ink:#E6EEEC; --muted:#93A5A8; --line:#2A3A3D;
+    --accent:#59BFA8; --up:#FF7A6B; --down:#7FA8F0; --warn:#FF8E80; --warn-bg:#3A2220; color-scheme:dark;}
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.6 "IBM Plex Sans KR",system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 20px 56px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;
+  border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:28px}
+h1{margin:0;font-size:1.9rem;letter-spacing:-.02em}
+.stamp{color:var(--muted);font-size:.9rem}
+h2{font-size:1.15rem;margin:0 0 12px}
+section{margin-bottom:40px}
+.note{color:var(--muted);font-size:.85rem;margin:-6px 0 12px}
+.empty{border:1px dashed var(--line);padding:16px;color:var(--muted);border-radius:6px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line)}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:baseline}
+th{font-weight:500;color:var(--muted);font-size:.85rem;white-space:nowrap}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+td.price{font-size:1.5rem;font-weight:700;letter-spacing:-.02em}
+td.price small{font-size:.8rem;font-weight:400;color:var(--muted);margin-left:4px}
+.item{font-weight:700}
+.kind{color:var(--muted);font-size:.9rem}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--muted)}
+.chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:16px}
+.chip{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--line);padding:10px 14px}
+.chip.hot{border-left-color:var(--warn);background:var(--warn-bg)}
+.chip b{display:block;font-size:1.6rem;line-height:1.2;font-variant-numeric:tabular-nums}
+.chip span{font-size:.88rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:820px){.cols{grid-template-columns:1fr}}
+ul.feed{list-style:none;margin:0;padding:0}
+ul.feed li{padding:10px 0;border-bottom:1px solid var(--line)}
+ul.feed a{text-decoration:none;font-weight:500}
+ul.feed a:hover,ul.feed a:focus-visible{text-decoration:underline}
+.meta{display:block;color:var(--muted);font-size:.82rem}
+.tag{display:inline-block;font-size:.78rem;padding:0 7px;border-radius:3px;background:var(--warn-bg);color:var(--warn);margin-right:6px}
+.links{margin-top:12px;font-size:.9rem}
+.links a{margin-right:16px}
+footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padding-top:14px}
+footer .err{color:var(--warn)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>축산 현황판</h1>
+    <div class="stamp" id="stamp">불러오는 중…</div>
+  </header>
+
+  <section>
+    <h2>가격·시세</h2>
+    <div id="prices"></div>
+  </section>
+
+  <section>
+    <h2>질병·방역</h2>
+    <p class="note">공식 발생 건수가 아니라, 최근 7일간 해당 질병 관련 뉴스 보도 건수예요. 정확한 현황은 아래 공식 사이트에서 확인하세요.</p>
+    <div id="disease"></div>
+  </section>
+
+  <div class="cols">
+    <section>
+      <h2>축산 뉴스</h2>
+      <ul class="feed" id="news"></ul>
+    </section>
+    <section>
+      <h2>통계·사육두수·수급</h2>
+      <div id="stats"></div>
+    </section>
+  </div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+function h(tag, attrs, ...kids){
+  const e = document.createElement(tag);
+  for (const [k,v] of Object.entries(attrs||{})){
+    if (k==='class') e.className=v; else e.setAttribute(k,v);
+  }
+  for (const k of kids.flat()) if (k!=null) e.append(k.nodeType ? k : document.createTextNode(k));
+  return e;
+}
+const won = n => Math.round(n).toLocaleString('ko-KR');
+const safeUrl = u => /^https?:\/\//.test(u||'') ? u : '#';
+function ago(iso){
+  const m = (Date.now()-new Date(iso))/60000;
+  if (m<60) return Math.max(1,Math.round(m))+'분 전';
+  if (m<1440) return Math.round(m/60)+'시간 전';
+  if (m<10080) return Math.round(m/1440)+'일 전';
+  const d=new Date(iso); return (d.getMonth()+1)+'/'+d.getDate();
+}
+function delta(cur, prev){
+  if (!prev) return h('span',{class:'flat'},'–');
+  const p=(cur-prev)/prev*100;
+  if (Math.abs(p)<0.05) return h('span',{class:'flat'},'0.0%');
+  return h('span',{class:p>0?'up':'down'}, (p>0?'▲ ':'▼ ')+Math.abs(p).toFixed(1)+'%');
+}
+function spark(points){
+  const v=points.map(p=>p.value), min=Math.min(...v), max=Math.max(...v), W=80, H=24;
+  const pts=v.map((y,i)=>[(i/(v.length-1||1))*W, H-2-((y-min)/((max-min)||1))*(H-4)]);
+  const ns='http://www.w3.org/2000/svg', s=document.createElementNS(ns,'svg');
+  s.setAttribute('viewBox',`0 0 ${W} ${H}`); s.setAttribute('width',W); s.setAttribute('height',H);
+  s.setAttribute('aria-hidden','true');
+  const pl=document.createElementNS(ns,'polyline');
+  pl.setAttribute('points',pts.map(p=>p.join(',')).join(' '));
+  pl.setAttribute('fill','none'); pl.setAttribute('stroke','var(--accent)'); pl.setAttribute('stroke-width','2');
+  s.append(pl); return s;
+}
+function empty(msg){ return h('div',{class:'empty'},msg); }
+
+function renderPrices(p){
+  const box=$('prices'); box.replaceChildren();
+  if (!p || !p.rows || !p.rows.length){
+    box.append(empty('가격 데이터가 아직 없어요. KAMIS 인증키와 ID를 등록하면 매일 자동으로 채워져요. (README 참고)'));
+    return;
+  }
+  box.append(h('p',{class:'note'}, `${p.market} 기준 · ${p.date} 조사 · 출처: KAMIS`));
+  const head=h('tr',{}, h('th',{},'품목'), h('th',{class:'n'},'가격'), h('th',{class:'n'},'전일 대비'), h('th',{class:'n'},'1개월 전 대비'), h('th',{class:'n'},'1년 전 대비'));
+  const body=p.rows.map(r=>h('tr',{},
+    h('td',{}, h('span',{class:'item'},r.item||''), h('div',{class:'kind'},[r.kind,r.rank].filter(Boolean).join(' · '))),
+    h('td',{class:'n price'}, won(r.price), h('small',{},'원/'+(r.unit||''))),
+    h('td',{class:'n'},delta(r.price,r.prev_day)),
+    h('td',{class:'n'},delta(r.price,r.prev_month)),
+    h('td',{class:'n'},delta(r.price,r.prev_year))));
+  box.append(h('div',{class:'scroll'}, h('table',{}, h('thead',{},head), h('tbody',{},body))));
+}
+
+function renderDisease(d){
+  const box=$('disease'); box.replaceChildren();
+  const counts=(d&&d.counts)||{}, names=Object.keys(counts);
+  if (!names.length){ box.append(empty('방역 뉴스 데이터가 아직 없어요.')); }
+  else {
+    box.append(h('div',{class:'chips'}, names.map(n=>
+      h('div',{class:'chip'+(counts[n]>0?' hot':'')}, h('b',{},counts[n]+'건'), h('span',{},n)))));
+    box.append(h('ul',{class:'feed'}, (d.items||[]).map(i=>
+      h('li',{}, h('span',{class:'tag'},i.tag), h('a',{href:safeUrl(i.link),target:'_blank',rel:'noopener noreferrer'},i.title),
+        h('span',{class:'meta'},[i.source,ago(i.date)].filter(Boolean).join(' · '))))));
+  }
+  box.append(h('p',{class:'links'},
+    h('a',{href:'https://www.qia.go.kr',target:'_blank',rel:'noopener noreferrer'},'농림축산검역본부'),
+    h('a',{href:'https://www.kahis.go.kr',target:'_blank',rel:'noopener noreferrer'},'가축방역통합정보시스템(KAHIS)')));
+}
+
+function renderNews(items){
+  const ul=$('news'); ul.replaceChildren();
+  if (!items||!items.length){ ul.append(h('li',{},empty('뉴스가 아직 없어요.'))); return; }
+  items.forEach(i=>ul.append(h('li',{},
+    h('a',{href:safeUrl(i.link),target:'_blank',rel:'noopener noreferrer'},i.title),
+    h('span',{class:'meta'},[i.source,ago(i.date)].filter(Boolean).join(' · ')))));
+}
+
+function renderStats(s){
+  const box=$('stats'); box.replaceChildren();
+  if (!s||!s.length){
+    box.append(empty('통계 데이터가 아직 없어요. KOSIS에서 만든 API 주소를 KOSIS_URL로 등록하면 표시돼요. (README 참고)'));
+    return;
+  }
+  const rows=s.map(r=>{
+    const pts=r.points, last=pts[pts.length-1], prev=pts[pts.length-2];
+    return h('tr',{},
+      h('td',{}, h('span',{class:'item'},r.name), h('div',{class:'kind'},last.period+(r.unit?' · '+r.unit:''))),
+      h('td',{class:'n'}, last.value.toLocaleString('ko-KR')),
+      h('td',{class:'n'}, prev?delta(last.value,prev.value):'–'),
+      h('td',{}, pts.length>1?spark(pts):''));
+  });
+  box.append(h('div',{class:'scroll'}, h('table',{},
+    h('thead',{},h('tr',{},h('th',{},'지표'),h('th',{class:'n'},'최신'),h('th',{class:'n'},'직전 대비'),h('th',{},'추이'))),
+    h('tbody',{},rows))));
+}
+
+function renderFooter(st){
+  const f=$('foot'); f.replaceChildren();
+  f.append('데이터는 매일 오전 6시경 자동 갱신돼요. 뉴스: Google News, 가격: KAMIS, 통계: KOSIS.');
+  const bad=Object.entries(st||{}).filter(([,v])=>v.state==='error');
+  bad.forEach(([k,v])=>f.append(h('div',{class:'err'},`${k} 갱신 실패(이전 데이터 표시 중): ${v.msg}`)));
+}
+
+fetch('data/data.json?'+Date.now()).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
+.then(d=>{
+  $('stamp').textContent = d.updated ? '마지막 업데이트 '+d.updated.replace('T',' ').slice(0,16) : '아직 업데이트 전';
+  renderPrices(d.prices); renderDisease(d.disease); renderNews(d.news); renderStats(d.stats); renderFooter(d.status);
+}).catch(()=>{ $('stamp').textContent='데이터를 불러오지 못했어요'; });
+</script>
+</body>
+</html>
