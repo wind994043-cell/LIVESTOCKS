@@ -1,1 +1,289 @@
-{"updated": null, "status": {}, "news": [], "disease": {"counts": {}, "items": []}, "prices": null, "stats": []}
+{
+ "updated": "2026-11-27T13:08+09:00",
+ "status": {
+  "news": {
+   "state": "ok"
+  },
+  "disease": {
+   "state": "ok"
+  },
+  "prices": {
+   "state": "skipped",
+   "msg": "KAMIS_KEY / KAMIS_ID 미설정"
+  },
+  "stats": {
+   "state": "skipped",
+   "msg": "KOSIS_URL 미설정"
+  }
+ },
+ "news": [
+  {
+   "title": "서귀포시, 방목생태 축산농장 조성...\"자연스러운 방목환경 마련\"",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ETEI4eW9PTnNxQW5iUU5tVFlLRm5KWHVlRUVZWVZSbDJhaHpuSF96aDZkTDFXZDBob2NvdFJYMHYzdnpDREljeTFIWThLTVhyd3hrM1VRekJScnM1LVp0V2ZPUmJ3Q0JfZURXREk5VTJXeW8?oc=5",
+   "source": "헤드라인제주",
+   "date": "2026-11-27T09:16:34+09:00"
+  },
+  {
+   "title": "[농담] 회장들의 정치, 농가들의 한숨 - 머니투데이",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5UWHVEUFhaQ3drb09uUmpNZGJ3akljRGNvbUg2eVgwTEZxX1RZaUhvNnhtWTgyYlZ1WUZpdXZJUEhGdm9Tc3IzSEYxMll1N3BtSlh0b3U1WC1RRVh1emFDUWFXQ1E0Wk1yWmNoa1NLZnbSAXBBVV95cUxOVFh1RFBYWkN3a29PblJqTWRid2pJY0Rjb21INnlYMExGcV9UWWlIbzZ4bVk4MmJWdVlGaXV2SVBIRnZvU3NyM0hGMTJZdTdwbUpYdG91NVgtUUVYdXphQ1FhV0NRNFpNclpjaGtTS2Z2?oc=5",
+   "source": "머니투데이",
+   "date": "2026-11-27T07:21:50+09:00"
+  },
+  {
+   "title": "횡성군, 횡성한우 미래 이끌 청년 축산인들과 소통의 시간 가져",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4zWDVpOEl5bU9PUFlmd09Kdjc2NWJRamFhRjJaMGxNUjRPcFFYTjFqcVVsYWpmbWhPSHFaeF9VYk4yZE1ZZmxlWkJiRWNMb0JmRTJmUXJPdFVrTkk?oc=5",
+   "source": "강원일보",
+   "date": "2026-11-27T00:05:00+09:00"
+  },
+  {
+   "title": "스마트축산으로 양돈장 악취 잡는다… 안성·평택 우수농가 사례 공유",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQejBzTjFKSTB5bU9POUN6TkNsWW5USDJHOUZ6akgzZzk0RjNiaTVWYWFRRnUtMXRTR3o5YmxwWEN0N3Y0ak1MM1JEeE5JQ0Z0RDQ0bFdrVWIyQmxaalFIYUNTM0E?oc=5",
+   "source": "돼지와사람",
+   "date": "2026-11-26T22:21:51+09:00"
+  },
+  {
+   "title": "전북대 채병호 연구교수, ‘Gongtae AI’로 농림축산식품부 장관상 수상",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBJUE9FWmUyZkhQUmdxdzVoeGdadXZIMngxN2RfTDQtenhVblB4YmFUSFlxYzZmTnFUb2d4cEV1S1NJN3VMMzlBOU4tS09wd1JhbVYzZEdwZDhLbDBoTmNtTW9ORXk0Unc?oc=5",
+   "source": "교수신문",
+   "date": "2026-11-26T17:11:01+09:00"
+  },
+  {
+   "title": "청도군귀농귀촌연합회, 대한민국 농촌재능나눔 대상 농림축산식품부장관 표창 수상",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE96a1ZaLWZCZ0JJT25YbnEtRVFzaEJXS2F4RXByTVVidk5HLTlnZmVWLUotbW5aTUhEem43N3VqTTFhS0lDNW10aTgwcmt4YW13YW5mbW4zNXpBazlSWFBCdk00Q1E5QQ?oc=5",
+   "source": "데일리대구경북뉴스",
+   "date": "2026-11-26T16:01:40+09:00"
+  },
+  {
+   "title": "돼지열병·ASF 경보에 들썩이는 방역 테마…중앙백신·우진비앤지·한일사료 매수 쏠리나",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pSWtSMUEtczR0aGdZbEhhTkg0Q09UN2FkUTkwMndOeEp3eS1zVVRFSVhqU3BSd3NVOUdkSE4xZFhaUjdKRjU5ekl5YmVvSVNtT0hkWENtb3lPZi1PbEdwVkxnMEhVS2dmWTgteTAxUUlXelZaZ3NB0gF3QVVfeXFMTWlJa1IxQS1zNHRoZ1lsSGFOSDRDT1Q3YWRROTAyd054Snd5LXNVVEVJWGpTcFJ3c1U5R2RITjFkWFpSN0pGNTl6SXliZW9JU21PSGRYQ21veU9mLU9sR3BWTGcwSFVLZ2ZZOC15MDFRSVd6Vlpnc0E?oc=5",
+   "source": "핀포인트뉴스",
+   "date": "2026-11-26T14:33:09+09:00"
+  },
+  {
+   "title": "횡성군, 한우 승계농과 사료비·스마트축산 지원 방안 논의",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2ZU5YLUNFRjJIVmhNOUZ2LVZvUHN0VjdoZlBZaVdlNndzdC1yeUFQTy16X3BCOU9sa1VWR2UtRnJBbm1YcTRmYjVaSEc4SlhsTU9jWFhvcFROVFNHOVN4ctIBYEFVX3lxTFA2ZU5YLUNFRjJIVmhNOUZ2LVZvUHN0VjdoZlBZaVdlNndzdC1yeUFQTy16X3BCOU9sa1VWR2UtRnJBbm1YcTRmYjVaSEc4SlhsTU9jWFhvcFROVFNHOVN4cg?oc=5",
+   "source": "연합뉴스",
+   "date": "2026-11-26T11:01:00+09:00"
+  },
+  {
+   "title": "대구축산농협 제2회 임시총회 개최…“축산농가 소득 증대 앞장”",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5SMm85cGZnVXlMVGFHY3BrZ2ZDTjhFb194cGdpeDZCWlEtLUlWX25Gb3drcG1kQVdMSHJpLXkwRDVMMTNkVmF3Ri1ZS0V4dTFSRXBOS1NGTzZEZw?oc=5",
+   "source": "농민신문",
+   "date": "2026-11-26T10:26:52+09:00"
+  },
+  {
+   "title": "AI로 축산물 품질평가부터 농가 경영관리까지…축평원, 혁신 서비스 공개",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9VOFczSlBQOHp4aE5WYmwxZFVubXRMNGNIZ2lzcEM1OUZKb20yZERWMzdRRVUzcS1HLXhBcmFrcmRuLWdYTFhPQzRwUGphS0dVMFpkM1BYQnM0WWdVblUxVWZHZ0g?oc=5",
+   "source": "돼지와사람",
+   "date": "2026-11-25T18:51:11+09:00"
+  },
+  {
+   "title": "송옥주 의원, 2026년 농업발전혁신인상 수상",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5tSS0zWVhlLXBOMUI4Zmd5Zk1FbUJTd01jeXJSUmNvTklCc3pMOUpSSHFyTUNNLWNXdVE0NE5BbHJ0c2hfSlY2SWNIZ04zbEtDUGx4WEVqV2IwRjczY0xKdGtR?oc=5",
+   "source": "시사매거진",
+   "date": "2026-11-25T17:43:08+09:00"
+  },
+  {
+   "title": "무주군, 한우 수급 안정화 총력…출하 운송료·도축 장려금 지원",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAySy1ScTF1YkJaSExZM0dfSjJ0cG1yUGtHUmQ2Q1BZbnlRQ0FIVW5JZWQ5RVo4cGpBa1ZTYzZ3akpaNlliMVdBbHR5MVU5V0lyb2Rvd01FYzNYZHlONHRpZzd3VzJsV1YtbGc?oc=5",
+   "source": "무주신문",
+   "date": "2026-11-25T11:21:32+09:00"
+  },
+  {
+   "title": "송옥주 의원, ‘2026 농업발전혁신인상’ 수상…농업정책 개선 공로",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5jdzVFVzNIYUZHVVlfN1dlU2JzY2JMbWJJVFlRNER2Q0sySWVvSGN0Tmh1YWxYa1VGV1dOY3BINmVWMzJBUWdCVFBEOW1iMXFkbUFQLTlRZHM0bkMwZEI3OHZNUklPVlpURjJB?oc=5",
+   "source": "프레시안",
+   "date": "2026-11-25T09:54:43+09:00"
+  },
+  {
+   "title": "“정책 성패는 현장 변화에 달려...축산농가·지역사회 상생 이끌 것”",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PcHhYM1hZZlc2NzBTWm5tNmh4QmtpWW1ZdjBMOEp0amZkczUtV2o5TkZlZndWZF82eGxyYXF6YmRMXzcwMDhfd1BJcEVLYlpabk5UU1lJQU15TXNQVDh1bHh0ZkNCNWNf?oc=5",
+   "source": "축산신문",
+   "date": "2026-11-25T08:57:53+09:00"
+  },
+  {
+   "title": "송옥주 의원, 농협중앙회 ‘2026 농업발전혁신인상’ 수상…농지법·농협법 규제개선 추진",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1hY3ZQTWtWZ1dqVnc4LW5YanBZeUlDUVREVHVtMjRYeTFiOUpoUHQ2d0R6WHF6YWJWRzU1RkhfcHJFYlN3RmZiaVRVaUJRTks4NXJSU0twcUZIZ3NHX0pBMjVoS19GNW02S1ItOF9vdw?oc=5",
+   "source": "월드장애인사랑뉴스",
+   "date": "2026-11-25T08:24:29+09:00"
+  },
+  {
+   "title": "‘AI 축산 LAB’으로 축산 분야 AX 혁신 성과 알린다",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1aSzBIU2J1bTZBY0E5Vkg5Z0F1Umg3Zm5CNnJ2d0lLNnJDdUV2UkQwaDdQSG54MmQxRTBBWEswZUdYZUljSkl3SU9ONjEzcFJuNnQxY3dhWWM2eUlpcFBTM0ZjamRoLWdfb2fSAWxBVV95cUxOWE1iUENTeVU1a0E2VmJqLWpQendUZW9UOWw3ZDVTNDZDTWNqOXBBY25mTDZZUWp5cEEzVm5VYlZnck5DWUtwYXZTQVNaOXU2em9MaUQteHNzREpNcUk3T0RXT25CUmU5Y0ZiWHY?oc=5",
+   "source": "한돈뉴스",
+   "date": "2026-11-25T04:21:00+09:00"
+  },
+  {
+   "title": "양계농협, 난가공 공장·중추장 추진…계란 수급 불안 잠재울 ‘구원투수’로",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4tWGFTMG9mLTJKRFl5ZVlpY1JNeE03ckxYaWNFeXNSWjhORnp0R1YwWGhpX0VWN240bUdxR2hOZHNKbVVDNmNhc0dVRDREX3l3UFlFRFVCZjkwYndDTnUtWEJRVy1tblF1ekFBdg?oc=5",
+   "source": "한국농어민신문",
+   "date": "2026-11-24T17:37:42+09:00"
+  },
+  {
+   "title": "‘AI 축산 랩(LAB)’으로 축산 분야 AX 혁신성과 알린다",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9wNkJlcTNqUWp4M2JodHROSUpDakE2R1QtZTZRMWtZREdvYUs1WnZTbjAtT0xIRG1uLTUxcHBmSVVuck9QNjZSYzhBSlJ3QmgzTmJ0ZFZLdFl4VGVtdjRkbjZPdzVFaVEwN3NTVQ?oc=5",
+   "source": "푸드아이콘",
+   "date": "2026-11-24T17:01:00+09:00"
+  },
+  {
+   "title": "[동정] 송미령 농림축산식품부 장관",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1jX2pIOVUzUTFJdXVsR0wwbmVlTmdaM1Y4c2xtWmp2OWVoV0tkcVk4S3NGNS1TSXZLeTZpU3p2LU40QVJVNmlpNlhSbTcwc1hUNmdULWZqQ18tQ0JvQTZOZmR3V1R1Q3d3NjFCbA?oc=5",
+   "source": "농수축산신문",
+   "date": "2026-11-24T17:00:00+09:00"
+  },
+  {
+   "title": "예산안 처리 시한 일주일 앞…“생산비 보전·농산물값 안정 예산 늘려야”",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5NNERsVkozUDRkNUwxbGpHUEVOc2hXOUhvTlFEVmppQWN0MGdyLWwwb01qaGlNX3lfTWt4cE5yZjdUQmxWcFF4T0lrTG9wTTFoQWpuTU5yR3FfQQ?oc=5",
+   "source": "농민신문",
+   "date": "2026-11-24T16:32:00+09:00"
+  },
+  {
+   "title": "영천시, 소 사육농가에 건초 1,427톤 지원…전년보다 48% 확대",
+   "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5MbUtsb1dwTmdaNWJER1phejhaaldCWWtHMmtZUHI1RWJZaUI5d0w4VHoybm9aT3ZnLVA2RGxUV3hnUjBucW5v?oc=5",
+   "source": "브레이크뉴스",
+   "date": "2026-11-24T12:49:17+09:00"
+  },
+  {
+   "title": "“미래 축산인 키우자”…제주축협, 여성·청년축산인 양성교육 수료식",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBTX2YwV0NPUTRYT0lHM2NpQS1BVWF1QThTNEswZzdkNzFSRG1KNHlUcVo5V1ltQVRIajlWdjM3elVFbUVVQVFwRDl2bEwzazd4WHRna2UxaXNyUQ?oc=5",
+   "source": "농민신문",
+   "date": "2026-11-24T09:57:30+09:00"
+  },
+  {
+   "title": "축평원, 한우·돼지 등 4개 축종 월간 수급 동향 정보 제공",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1xWDM1dWFvVGM4bWpMa29icDd0N0U3RjRxWGhicDBPY0tfN1BnWnNmLU1mNExnRlpqRWxsRTQtblczUFVIUUx6WmdWNkd1T3lqdnJIQUljeHhEZEdjVGtJZVF3T2pzNVRM?oc=5",
+   "source": "축산신문",
+   "date": "2026-11-24T09:44:30+09:00"
+  },
+  {
+   "title": "데이터와 AI로 축산의 미래를 바꾸다",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1naE02d21jZ3JfbEtxZjlERl83Mm9lM2lJVGR1Yjg4TEFhbFNRUW1QMmY3UnM4VHBJUEdVMFBtLUpsUXNFbWNkZkNIYU9CTDlQN0dQcTRqMkJFXzZvQW1lZkd1SGpWRFlhQ0HSAWxBVV95cUxPejZDTGxnLWo0Y1hCcWJDTEM3TDVNUjdFVE5fNGJfOGQ4cnYzVWZNZXhDRm80bEc4SjJLa09udEtPWFl6TEZUeG9vMWhSSnRwbjhYTHplWXgwQUNLM0pMR1psM25FM0tXNzhhY00?oc=5",
+   "source": "한돈뉴스",
+   "date": "2026-11-24T04:26:00+09:00"
+  }
+ ],
+ "disease": {
+  "counts": {
+   "구제역": 1,
+   "아프리카돼지열병": 11,
+   "고병원성 조류인플루엔자": 21,
+   "럼피스킨": 1
+  },
+  "items": [
+   {
+    "title": "나주 육용 오리 농장서 AI 항원 확인…일시이동중지 명령",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUTWdQcHpzSWk5MFJzVnFyNGVBd091ZkxlOVZqdnhnTEFHaUZQMk5aNzNzRmpVa29LUzVicDVsNTdsWXNxUU1YRl9MMU9rSG5BdVFYV2dEeW55bXpYY0lYQtIBYEFVX3lxTFBUTWdQcHpzSWk5MFJzVnFyNGVBd091ZkxlOVZqdnhnTEFHaUZQMk5aNzNzRmpVa29LUzVicDVsNTdsWXNxUU1YRl9MMU9rSG5BdVFYV2dEeW55bXpYY0lYQg?oc=5",
+    "source": "연합뉴스",
+    "date": "2026-11-26T21:45:39+09:00",
+    "tag": "고병원성 조류인플루엔자"
+   },
+   {
+    "title": "아프리카돼지열병(ASF) 방역대책 추진현황 261125 18시기준",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRExoaWxFNXFZTDU0VHl4dzBqcjRFb3hJb1Z6czd0M1JZLXNVZl9DM3ZwS3N2RUJiakxPU2xWdGFNbGVJZElMU1JsQlFmVnBtSHdaNndoSFM5ZDV5UEI4UUFqUUtGc21Uc2N4eGZPeGoyUUFZcHViX1FUR1JNUm41akFCa1M?oc=5",
+    "source": "경기도뉴스포털",
+    "date": "2026-11-26T09:28:18+09:00",
+    "tag": "아프리카돼지열병"
+   },
+   {
+    "title": "강원도 턱밑까지 올라와⋯조류인플루엔자 확산방지 총력",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA3YmVQQ0g4SEtMdG1LMmFKWkE3U2VUc0JyNnRjeE91c0VwTHJoRXVCeDRGR0tVZmJNa3Rkd3BZaG03SURBWHpOZE1fVV9FOWZ3TXgyck5reTZaTDQ?oc=5",
+    "source": "강원일보",
+    "date": "2026-11-25T00:10:00+09:00",
+    "tag": "고병원성 조류인플루엔자"
+   },
+   {
+    "title": "“고병원성 조류인플루엔자 추가 확산 막아라”…경기도, 도계장 5곳 긴급 방역점검",
+    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBkV2piNXo5WW9rUFFFNENtbjZ6SHlNWFFoaHNCSDUzZ29lZTROTFF0YUVmUGR1SUtWSzdjbW5NYVlhenJWeVFJSF9DTldUZXU4?oc=5",
+    "source": "문화일보",
+    "date": "2026-11-23T07:46:25+09:00",
+    "tag": "고병원성 조류인플루엔자"
+   },
+   {
+    "title": "겨울 철새서 잇단 확진…수도권 조류독감 비상",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6eVdyR1lTd3BCZFNSUkRzaXhGRTVSOXVGUWNPTlkza2MxT1J6a0Jfd1RmdXV0RDN6ZGpCODUzejdkRVNIOVhVTnR5WjJmVGlncU5OSVlBaTlEbC1TY0VEWjBOUjhzZkU?oc=5",
+    "source": "연합뉴스TV",
+    "date": "2026-11-23T05:25:00+09:00",
+    "tag": "고병원성 조류인플루엔자"
+   },
+   {
+    "title": "아프리카돼지열병 '3.9배' 늘었는데 차단망 걷는다고 ?",
+    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9DZ1FhbDFUWGhPRnd5QjNQQVdFMVlObDQ0MEdFSGZjaWo4SEY3YzBhVXc5dGxqR1ZiSzFzR1pTeFB5RVM2anJoajlkUWx6dF9uS3RabXVDMnhnV0Z1YVRhZFByU2xPS29EUDQyNTgzSdIBc0FVX3lxTE5Xa2N0eTJjT2w1ZU04c3pRR2xQYTVLRU1rOXJDWHJnYnQ2VTJ0T1d2NXNxLWdLVnJ5V29jSnpybGxaQkVQOENrRko2U1ZoOXBaV2NNNVZjdVBvLVBRYzdSX3E0bng1ZDVYTmZQSEQzOTlMZnM?oc=5",
+    "source": "세이프타임즈",
+    "date": "2026-11-20T14:51:34+09:00",
+    "tag": "아프리카돼지열병"
+   },
+   {
+    "title": "고병원성 조류독감 확산 차단…지방정부 방역·재난관리 역량 결집",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5WMG9qQUZUVDUyNmJBUFhKby1vdGJ1VDBQTFM5Z1RrSWFmUXNhMWgtZ3UyU3dPdmMzQWJDcl9FMUNyLW5ZVS1MamxQcVEzSXotUjgyN3NBeDljQzg4OVR0aFJZdkdEbmc4bGtFOA?oc=5",
+    "source": "대한민국 정책브리핑",
+    "date": "2026-11-19T18:28:40+09:00",
+    "tag": "고병원성 조류인플루엔자"
+   },
+   {
+    "title": "럼피스킨에 소 820마리 폐사…“방역대책 개선 필요”",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBid2RUQVJwYTdERUhlNkNvYlZqMU42cjQ0c3V3QU1id0IydEFleWZMSDJLcXdPOUV6NlNKcF9lQ2V3a09paW8ybGFhc08tRzVKaVh2aDF2RFRuUQ?oc=5",
+    "source": "농민신문",
+    "date": "2026-11-19T17:14:00+09:00",
+    "tag": "럼피스킨"
+   },
+   {
+    "title": "고병원성 AI, 보름 만에 전국 확산…가금농장 9곳·야생조류 11곳서 확인",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1BY0c0WXE1aUFndm5tM09IN01GVWZyU19NUEN1Mk9DNHVCeDlEaHhqYTI2ak8wcFJsOUR6Z0VKNVlVTWp0My14YVNQUGkxemRFM25kV2dPM2UzcFdITDI5dEVwUDA?oc=5",
+    "source": "돼지와사람",
+    "date": "2026-11-18T20:28:08+09:00",
+    "tag": "고병원성 조류인플루엔자"
+   },
+   {
+    "title": "구제역·고병원성 AI 동시 발병",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE82ZS1GRDctS0dUWGh4amxEdDBzV2psNkh6bkplYWRGUXV2WWRsVWhhYWxKWDMwVmp3eGJTUFNKalRacS1oYld1Ri1TcktkX2ZnOV81TDZuTG43UFdUaExIcWc1Y3pBM0oyTjhQU1hn?oc=5",
+    "source": "팜인사이트",
+    "date": "2026-11-13T17:00:00+09:00",
+    "tag": "구제역"
+   },
+   {
+    "title": "경북 예천 소 농장서 구제역 발생…올해 들어 16번째",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51SDhQejZRU0pvdUNvcVl4LV92RFpWYjdhZ3FQYmNBYzJTa19EWlZHbm1CQl9lT2c5UDRBYU5qNURHTDZlZDJzS2I2aVVScGZULXZuNEhiR1pGQzhaSjg2RWhfLXFKZW8?oc=5",
+    "source": "연합뉴스TV",
+    "date": "2026-11-13T17:00:00+09:00",
+    "tag": "구제역"
+   },
+   {
+    "title": "예천서 또 구제역 양성...1월 시작했는데 11월에도 끝나지 않았다",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ZdERHRjZnZkhxWlJVbmpBSWJlN2tWOXgwLS1JOHVfbFhWR3JxTlhqcE1rWXZ5SnlmbUpYTlQ3enNoWWFicThoRk56QXlZRTRTXzE4NjMyR0cyeTJIV3piMnpn?oc=5",
+    "source": "돼지와사람",
+    "date": "2026-11-12T17:00:00+09:00",
+    "tag": "구제역"
+   },
+   {
+    "title": "경북 예천 소 농장서 구제역 발생…올 들어 16번째",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmWjBXTFFGekVRMndMck1WdEg2al9TcGI4bEJ5dUQ1WUFYNV9zSXpwRGRtSU9Xd2hiWEZfYWFPZ2ZFdjFyZFdNNGRyMzZ5bUk1Ujg3aWdSNnhjTWM?oc=5",
+    "source": "KBS 뉴스",
+    "date": "2026-11-12T17:00:00+09:00",
+    "tag": "구제역"
+   },
+   {
+    "title": "농협, 럼피스킨 피해농가에 무이자 재해자금 500억원 지원",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1waV9Jam5rM0xjOWxQdWVuSUZZYWpucGlUTHlIRTdqNV9wSEpKb2FBSTRnelNzS09xUFJUZEJRR3lyLWR6LW9PVjVRaFhzaHV3VVV3Y0hIZFNoSEHSAWBBVV95cUxOanlKbG91RHY5S1F4Vjg4Ti1ZaGowZjk0dVFLVjBFWERJWEtyN3RfNUNDbDdNQ1pGOWYwSFhvTUJVdlpTcjdxdnhIY1B6c1g3eVhuZ3psd2tMLW85aXdsZng?oc=5",
+    "source": "연합뉴스",
+    "date": "2026-11-11T17:00:00+09:00",
+    "tag": "럼피스킨"
+   },
+   {
+    "title": "농협, 럼피스킨 피해농가에 500억원 긴급 지원…정부와 함께 방역 총력",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1rNW5TM0xHMS1HYlhHOXBoeFpaczFlRXMxRkVWMG5QZDlFaUhXbEtGeDk4WXVKSEFTNnBzQ2czeVFQaTFNOXhfc0FoSDZRdmtrSHNjcTE2RlMzdmw5OHFkWA?oc=5",
+    "source": "한국농촌경제신문",
+    "date": "2026-11-11T17:00:00+09:00",
+    "tag": "럼피스킨"
+   },
+   {
+    "title": "검역본부, 아시아지역 구제역 대응 '전문가 한자리'",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8yRlRYaDJuNTJGandpVXZjVk1MVnAzallkU0FNM0tJVW8zSjJNOXhsenZoUzVFbnlMXzJKczd0ZjN4bTJHZy1PWmw1aHhsZXRTcTdkcU95S2huRzdTcUlKeVFkcmh0eDk2?oc=5",
+    "source": "축산신문",
+    "date": "2026-11-09T12:50:00+09:00",
+    "tag": "구제역"
+   }
+  ]
+ },
+ "prices": null,
+ "stats": []
+}
