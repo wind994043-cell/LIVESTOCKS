@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T14:18+09:00",
+ "updated": "2026-11-27T14:19+09:00",
  "status": {
   "news": {
    "state": "ok"
@@ -16,12 +16,6 @@
   }
  },
  "news": [
-  {
-   "title": "“ESG 경영 성과 인정”…축산환경관리원 잇단 수상 ‘눈길’",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pSjJoWHlqZFRFMWVuTWt1TWJXeXZ1LUJqb0E2elg2Sm9aWG01d1ZXOUx3dElXZjF0ZWV1cENNMjFwYndXMlV4aGM3cGVNLVcxckZtckU5endXQQ?oc=5",
-   "source": "농민신문",
-   "date": "2026-11-27T13:07:00+09:00"
-  },
   {
    "title": "서귀포시, 방목생태 축산농장 조성...\"자연스러운 방목환경 마련\"",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ETEI4eW9PTnNxQW5iUU5tVFlLRm5KWHVlRUVZWVZSbDJhaHpuSF96aDZkTDFXZDBob2NvdFJYMHYzdnpDREljeTFIWThLTVhyd3hrM1VRekJScnM1LVp0V2ZPUmJ3Q0JfZURXREk5VTJXeW8?oc=5",
@@ -45,6 +39,18 @@
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQejBzTjFKSTB5bU9POUN6TkNsWW5USDJHOUZ6akgzZzk0RjNiaTVWYWFRRnUtMXRTR3o5YmxwWEN0N3Y0ak1MM1JEeE5JQ0Z0RDQ0bFdrVWIyQmxaalFIYUNTM0E?oc=5",
    "source": "돼지와사람",
    "date": "2026-11-26T22:21:51+09:00"
+  },
+  {
+   "title": "축평원, ‘2026 축산데이터 혁신 서비스 포럼‘ 성료",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5yZ0tHNC1xUVowV1UwUGliWmpvNUhsQ1QxU2Y3NHRjNkZWTDIycFZRaGpzXy13RktCOXZHVUo5NjJvN1JyVUpQQ3BXZjBvdGlnXzBNbUxueG1rTDdMa3pnZ3NJTlB3cHc?oc=5",
+   "source": "푸드아이콘",
+   "date": "2026-11-26T21:35:00+09:00"
+  },
+  {
+   "title": "송옥주 의원, ‘2026 농업발전혁신인상’ 수상…농업정책 개선 성과 인정",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Pcms1YllxZ3BHWHdVMHVwYWhjM1g0T1JHd3FZSEdmTndmN0tLUTdVU250UmhVN1NYU0FOMWp4blRPanNBREI1LXdKUGpIeE5pRE1nZndKaTRZUXB1R083eWtUYk91WWs?oc=5",
+   "source": "경인신문",
+   "date": "2026-11-26T17:14:12+09:00"
   },
   {
    "title": "전북대 채병호 연구교수, ‘Gongtae AI’로 농림축산식품부 장관상 수상",
@@ -83,10 +89,22 @@
    "date": "2026-11-25T18:51:11+09:00"
   },
   {
+   "title": "‘농산물가격안정제’ 기준가격 산정방법 확정…마늘·양파 내년부터 지급",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNNTJOdHdlalJWSEs2bWZPbklKMXdOQkU3RjdxTmduX3dBaUQ3VTdKbDZvSkVxOV9JMy1WUDZPd1NOdmhSQ3R4U0czUnFsaDhoTHVzYkNpckdrUQ?oc=5",
+   "source": "농민신문",
+   "date": "2026-11-25T18:31:00+09:00"
+  },
+  {
    "title": "송옥주 의원, 2026년 농업발전혁신인상 수상",
    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5tSS0zWVhlLXBOMUI4Zmd5Zk1FbUJTd01jeXJSUmNvTklCc3pMOUpSSHFyTUNNLWNXdVE0NE5BbHJ0c2hfSlY2SWNIZ04zbEtDUGx4WEVqV2IwRjczY0xKdGtR?oc=5",
    "source": "시사매거진",
    "date": "2026-11-25T17:43:08+09:00"
+  },
+  {
+   "title": "한우 언제 출하해야 유리할까…축평원, ‘한우 비서’ 출시",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1FdHlhT09jQmZYSjNXbUpKbk81cG04cnh4UXFtU043UkM0Zk9wUlhicUN1ckIwRHNPT19UOGQ0TmpSS09PUHQ4ZVFYSFBNaGJBVk9kajRqQllpWVJkNXdhZFA1VG1rZw?oc=5",
+   "source": "푸드투데이",
+   "date": "2026-11-25T16:25:23+09:00"
   },
   {
    "title": "무주군, 한우 수급 안정화 총력…출하 운송료·도축 장려금 지원",
@@ -131,50 +149,60 @@
    "date": "2026-11-24T17:01:00+09:00"
   },
   {
+   "title": "[동정] 송미령 농림축산식품부 장관",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1jX2pIOVUzUTFJdXVsR0wwbmVlTmdaM1Y4c2xtWmp2OWVoV0tkcVk4S3NGNS1TSXZLeTZpU3p2LU40QVJVNmlpNlhSbTcwc1hUNmdULWZqQ18tQ0JvQTZOZmR3V1R1Q3d3NjFCbA?oc=5",
+   "source": "농수축산신문",
+   "date": "2026-11-24T17:00:00+09:00"
+  },
+  {
    "title": "예산안 처리 시한 일주일 앞…“생산비 보전·농산물값 안정 예산 늘려야”",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5NNERsVkozUDRkNUwxbGpHUEVOc2hXOUhvTlFEVmppQWN0MGdyLWwwb01qaGlNX3lfTWt4cE5yZjdUQmxWcFF4T0lrTG9wTTFoQWpuTU5yR3FfQQ?oc=5",
    "source": "농민신문",
    "date": "2026-11-24T16:32:00+09:00"
-  },
-  {
-   "title": "영천시, 소 사육농가에 건초 1,427톤 지원…전년보다 48% 확대",
-   "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5MbUtsb1dwTmdaNWJER1phejhaaldCWWtHMmtZUHI1RWJZaUI5d0w4VHoybm9aT3ZnLVA2RGxUV3hnUjBucW5v?oc=5",
-   "source": "브레이크뉴스",
-   "date": "2026-11-24T12:49:17+09:00"
-  },
-  {
-   "title": "고령군,‘축산농가 애로사항 듣고 지역 축산업 발전 방향 논의’",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvOHk1d2pPS241UjREZDJTQzU2WVAwU0RiQncteWFXeENub0NPWWZyT0tzUXVDZXhBSDZXMnpwOEJDd3RzNENqeHBWQy04OThKYWxHVW5KcExWZG1Ldi1YZ2ppeU9OZw?oc=5",
-   "source": "데일리대구경북뉴스",
-   "date": "2026-11-24T11:06:05+09:00"
-  },
-  {
-   "title": "“미래 축산인 키우자”…제주축협, 여성·청년축산인 양성교육 수료식",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBTX2YwV0NPUTRYT0lHM2NpQS1BVWF1QThTNEswZzdkNzFSRG1KNHlUcVo5V1ltQVRIajlWdjM3elVFbUVVQVFwRDl2bEwzazd4WHRna2UxaXNyUQ?oc=5",
-   "source": "농민신문",
-   "date": "2026-11-24T09:57:30+09:00"
-  },
-  {
-   "title": "축평원, 한우·돼지 등 4개 축종 월간 수급 동향 정보 제공",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1xWDM1dWFvVGM4bWpMa29icDd0N0U3RjRxWGhicDBPY0tfN1BnWnNmLU1mNExnRlpqRWxsRTQtblczUFVIUUx6WmdWNkd1T3lqdnJIQUljeHhEZEdjVGtJZVF3T2pzNVRM?oc=5",
-   "source": "축산신문",
-   "date": "2026-11-24T09:44:30+09:00"
   }
  ],
  "disease": {
   "counts": {
    "구제역": 1,
-   "아프리카돼지열병": 11,
-   "고병원성 조류인플루엔자": 8,
+   "아프리카돼지열병": 12,
+   "고병원성 조류인플루엔자": 22,
    "럼피스킨": 1
   },
   "items": [
+   {
+    "title": "나주 육용 오리 농장서 AI 항원 확인…일시이동중지 명령",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUTWdQcHpzSWk5MFJzVnFyNGVBd091ZkxlOVZqdnhnTEFHaUZQMk5aNzNzRmpVa29LUzVicDVsNTdsWXNxUU1YRl9MMU9rSG5BdVFYV2dEeW55bXpYY0lYQtIBYEFVX3lxTFBUTWdQcHpzSWk5MFJzVnFyNGVBd091ZkxlOVZqdnhnTEFHaUZQMk5aNzNzRmpVa29LUzVicDVsNTdsWXNxUU1YRl9MMU9rSG5BdVFYV2dEeW55bXpYY0lYQg?oc=5",
+    "source": "연합뉴스",
+    "date": "2026-11-26T21:45:39+09:00",
+    "tag": "고병원성 조류인플루엔자"
+   },
    {
     "title": "아프리카돼지열병(ASF) 방역대책 추진현황 261125 18시기준",
     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRExoaWxFNXFZTDU0VHl4dzBqcjRFb3hJb1Z6czd0M1JZLXNVZl9DM3ZwS3N2RUJiakxPU2xWdGFNbGVJZElMU1JsQlFmVnBtSHdaNndoSFM5ZDV5UEI4UUFqUUtGc21Uc2N4eGZPeGoyUUFZcHViX1FUR1JNUm41akFCa1M?oc=5",
     "source": "경기도뉴스포털",
     "date": "2026-11-26T09:28:18+09:00",
     "tag": "아프리카돼지열병"
+   },
+   {
+    "title": "강원도 턱밑까지 올라와⋯조류인플루엔자 확산방지 총력",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA3YmVQQ0g4SEtMdG1LMmFKWkE3U2VUc0JyNnRjeE91c0VwTHJoRXVCeDRGR0tVZmJNa3Rkd3BZaG03SURBWHpOZE1fVV9FOWZ3TXgyck5reTZaTDQ?oc=5",
+    "source": "강원일보",
+    "date": "2026-11-25T00:10:00+09:00",
+    "tag": "고병원성 조류인플루엔자"
+   },
+   {
+    "title": "“고병원성 조류인플루엔자 추가 확산 막아라”…경기도, 도계장 5곳 긴급 방역점검",
+    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBkV2piNXo5WW9rUFFFNENtbjZ6SHlNWFFoaHNCSDUzZ29lZTROTFF0YUVmUGR1SUtWSzdjbW5NYVlhenJWeVFJSF9DTldUZXU4?oc=5",
+    "source": "문화일보",
+    "date": "2026-11-23T07:46:25+09:00",
+    "tag": "고병원성 조류인플루엔자"
+   },
+   {
+    "title": "겨울 철새서 잇단 확진…수도권 조류독감 비상",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6eVdyR1lTd3BCZFNSUkRzaXhGRTVSOXVGUWNPTlkza2MxT1J6a0Jfd1RmdXV0RDN6ZGpCODUzejdkRVNIOVhVTnR5WjJmVGlncU5OSVlBaTlEbC1TY0VEWjBOUjhzZkU?oc=5",
+    "source": "연합뉴스TV",
+    "date": "2026-11-23T05:25:00+09:00",
+    "tag": "고병원성 조류인플루엔자"
    },
    {
     "title": "아프리카돼지열병 '3.9배' 늘었는데 차단망 걷는다고 ?",
@@ -198,11 +226,18 @@
     "tag": "럼피스킨"
    },
    {
-    "title": "검역본부, 고병원성 조류인플루엔자 'AI 위험주의보' 발령",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ORXNvQXJ6d3I3aG9BbXlrdzQwTGEyQk8xOFdNdmN6amVZdmIyNFViTnBIQkgwcUtRX0RkX3dvdXVGQ1hMYXdkcHNoeTVOQ1R1RlllX2dScHhBaV9IQ2hnYg?oc=5",
-    "source": "한국농촌경제신문",
-    "date": "2026-11-16T17:00:00+09:00",
+    "title": "고병원성 AI, 보름 만에 전국 확산…가금농장 9곳·야생조류 11곳서 확인",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1BY0c0WXE1aUFndm5tM09IN01GVWZyU19NUEN1Mk9DNHVCeDlEaHhqYTI2ak8wcFJsOUR6Z0VKNVlVTWp0My14YVNQUGkxemRFM25kV2dPM2UzcFdITDI5dEVwUDA?oc=5",
+    "source": "돼지와사람",
+    "date": "2026-11-18T20:28:08+09:00",
     "tag": "고병원성 조류인플루엔자"
+   },
+   {
+    "title": "제주도, 아프리카돼지열병 유입 차단 방역 강화",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBpY1ZkYjRoN1pTTUhnVUNaU2pYWkhZVkptZVNlZVRFX0xHVjFlQjZDU1dPS25FMEwwOU5TRWVPa21SMk15Tl9CTGVrdFJVZFVlUlV1UXNVdXRjX03SAWBBVV95cUxQaVhLRlZISDhmcXRxcTkyb0stbDZZTDAybnJtZ0E3cnFHcklRcUtCVlZrcVlzSnEtTldKWTQzWGg3bDdYWjVJOWFCbll3QUJqajVhaXdDaVlRclZ1SU1qYjQ?oc=5",
+    "source": "연합뉴스",
+    "date": "2026-11-18T10:07:43+09:00",
+    "tag": "아프리카돼지열병"
    },
    {
     "title": "구제역·고병원성 AI 동시 발병",
@@ -217,13 +252,6 @@
     "source": "연합뉴스TV",
     "date": "2026-11-13T17:00:00+09:00",
     "tag": "구제역"
-   },
-   {
-    "title": "행안부, 조류인플루엔자 방역에 재난특교세 70억원 지원",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9RRlVUYWh2YUpVanZCZE42a0Y1OFc5anlzQ3pYNERNUjRWQ3gxMXRIZUpHSG9hNmxLZUM3RHZQU0xNWjdYT0ZtV0NaM21LWWhIbExNTlR4bXhXVzTSAWBBVV95cUxPRG4ta0FBdlZMY1ByRG5MQUZ5TTJqb2h6aDdFa2pPMU1NdVp2M1Y4UTFQSmxzNExlMmtPUzVJY0lLVkttYnJ1cGlLc3ZvZ0NObkQxdjJlYWtENzlrc1Z5b00?oc=5",
-    "source": "연합뉴스",
-    "date": "2026-11-13T17:00:00+09:00",
-    "tag": "고병원성 조류인플루엔자"
    },
    {
     "title": "예천서 또 구제역 양성...1월 시작했는데 11월에도 끝나지 않았다",
@@ -252,34 +280,6 @@
     "source": "한국농촌경제신문",
     "date": "2026-11-11T17:00:00+09:00",
     "tag": "럼피스킨"
-   },
-   {
-    "title": "검역본부, 아시아지역 구제역 대응 '전문가 한자리'",
-    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8yRlRYaDJuNTJGandpVXZjVk1MVnAzallkU0FNM0tJVW8zSjJNOXhsenZoUzVFbnlMXzJKczd0ZjN4bTJHZy1PWmw1aHhsZXRTcTdkcU95S2huRzdTcUlKeVFkcmh0eDk2?oc=5",
-    "source": "축산신문",
-    "date": "2026-11-09T12:50:00+09:00",
-    "tag": "구제역"
-   },
-   {
-    "title": "고병원성 조류인플루엔자(AI) 방역대책 추진현황 261104 19시기준",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRUZfRXdXSmtJbFlMaWJTclBIX2ZmZkpydkU2ZllyalBVa25XUTRNbHROZlNVQXcxTzVDbXctb3FJeHRXWWlEU3dOZVpZY3QwbDE1aWxQbkdoUnB0TmhSTU9oQlpCQ2RlQ3RkUEVNazNRdV9SNkktckVzTGUxZC1aM2JjSS0?oc=5",
-    "source": "경기도뉴스포털",
-    "date": "2026-11-06T17:00:00+09:00",
-    "tag": "고병원성 조류인플루엔자"
-   },
-   {
-    "title": "강원특별자치도, 아프리카돼지열병 가상 방역 현장 훈련",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAzcjIwblRsYlRZcFBIMlZ0d0FiM2RUSDJmLW5OWnQzSUJrMC1qeUhFUmgzbDlITVhYTy03dlY0d1p3b0Q1T0tmRnFDcWR3N2RnU0g1ZmVEZ2RhV2s?oc=5",
-    "source": "강원일보",
-    "date": "2026-11-04T17:00:00+09:00",
-    "tag": "아프리카돼지열병"
-   },
-   {
-    "title": "한 총리, 연천 ’고병원성 조류인플루엔자’ 발생에 “초동 방역 만전 기하라“",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9vMXplQ0xjbWFyXzJzaVkteHpXV2p5SmgwYmpjaUFQcWYzX1BaS21HcHd4dmNINFNhTERpeUhFZnNMcklnaWVTNWJhellHRFMxcVlNN3NabUU3X2hoNHI2RzluQmkyWkk?oc=5",
-    "source": "연합뉴스TV",
-    "date": "2026-11-04T17:00:00+09:00",
-    "tag": "고병원성 조류인플루엔자"
    }
   ]
  },
